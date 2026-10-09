@@ -1,0 +1,13 @@
+StateGraph(State)
+→ Creates a graph that shares the given State.
+
+add_node(node_name, function)
+→ Registers a node (a function) with a name.
+
+add_edge(from_node, to_node)
+→ Always go from one node to the next.
+
+add_conditional_edges(from_node, router_function, path_map)
+→ After 'from_node', call router_function(state).
+→ Whatever the router returns is looked up in path_map.
+→ Execute the corresponding next node.

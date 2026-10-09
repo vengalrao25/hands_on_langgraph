@@ -1,0 +1,9 @@
+# Core
+langchain                    # provides create_agent (referenced in lessons)
+langchain-openai             # ChatOpenAI
+langchain-core               # messages, tools, runnables
+langgraph                    # the star of this project
+python-dotenv
+
+# Persistence
+langgraph-checkpoint-sqlite  # SqliteSaver for durable, on-disk state
